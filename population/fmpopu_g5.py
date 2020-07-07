@@ -1,7 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 
-f = open('population/202006_202006_연령별인구현황_월간_남여.csv')
+f = open('202006_202006_연령별인구현황_월간_남여.csv')
 data = csv.reader(f)
 
 result = []

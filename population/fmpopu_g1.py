@@ -13,7 +13,7 @@ for row in data:
             m.append(int(row[i+3].replace(",", "")))
             f.append(int(row[-(i+1)].replace(",", "")))
 f.reverse()
-
+# 바 그래프를 그려보자 뒤에 가려서 하나도 안 보여...ㅠ
 plt.barh(range(101), m)
 plt.barh(range(101), f)
 plt.show()
