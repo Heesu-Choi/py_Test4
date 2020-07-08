@@ -2,26 +2,19 @@ import csv      # 우리동네랑 가장 비슷한 인구구조가 비슷한 곳
 f = open('202006_202006_연령별인구현황_월간_전국.csv')
 data = csv.reader(f)
 
-# for row in data:
-#     if '서울특별시 성북구 안암동(1129060000)' == row[0]:
-#         print(row)
-
-# for row in data:
-#     if '장위' in row[0]:
-#         print(row)
-
-# for row in data:
-#     if '성북구' in row[0]:
-#         for i in row[3:]:
-#             print(i)
-
 mn = 10000
 result = []
 result_name = ''
 
 home = []
+<<<<<<< HEAD
 home_name = input("동 이름을 입력해주세요")
 home_linenum = 0                
+=======
+home_name = input("동 이름을 입력해 주세요!! :: ")
+
+home_linenum = 0
+>>>>>>> 5f02c918cdbe6c83ddc1311264a3966d0d2a396c
 for row in data:
     if home_name in row[0]:
         home_linenum = data.line_num
